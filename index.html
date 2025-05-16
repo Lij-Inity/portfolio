@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="cs/style.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        <span>My Personal Code Folio</span>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="personalprofile.html">Personal_Profile</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<h1>Home Page</h1>
+
+  <div class="slideshow-container">
+  <div class="slide fade">
+    <img src="img/pic1.png" class="slide-img">
+  </div>
+
+  <div class="slide fade">
+    <img src="img/pic2.png" class="slide-img">
+  </div>
+  
+    <div class="slide fade">
+    <img src="img/pic3.png" class="slide-img">
+  </div>
+
+  <div class="slide fade">
+    <img src="img/pic4.png" class="slide-img">
+  </div>
+
+    <div class="slide fade">
+    <img src="img/pic5.png" class="slide-img">
+  </div>
+
+</div>
+
+  
+  
+  <script>
+  let slideIndex = 0;
+  function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Auto-change every 3s
+  }
+  showSlides();
+</script>
+
+
+ <footer>
+       
+        <div class="footer-bottom">
+            <p>&copy; <?php echo date("Y"); ?> Developed by FICHANI. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
